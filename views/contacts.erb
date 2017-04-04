@@ -9,6 +9,12 @@
 <p>Main menu</p>
 <ul>
   <li><a href="/contacts">View all contacts</a></li>
+    <h1>All Contacts</h1>
+      <ul>
+        <% Contact.all.each do |contact| %>
+        <li><%= contact.first_name %> <%= contact.last_name %></li>
+        <% end %>
+      </ul>
   <!-- please complete me with links to other actions -->
   <li><a href="/contacts">Add a new contacts</a></li>
   <li><a href="/contacts">Modify an existing contact</a></li>
