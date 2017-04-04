@@ -7,3 +7,7 @@ require 'sinatra'
     @crm_app_name = "Mark's CRM"
     erb :index
   end
+
+  get '/contacts' do
+    erb :contacts
+  end
