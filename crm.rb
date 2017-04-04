@@ -3,6 +3,7 @@
 # You'll have to implement it from scratch.
 require 'sinatra'
 
-get '/' do
-  'Main Menu'
-end
+  get '/' do
+    @crm_app_name = "Mark's CRM"
+    erb :index
+  end
