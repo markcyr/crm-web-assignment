@@ -12,10 +12,13 @@
     <h1>All Contacts</h1>
       <ul>
         <% Contact.all.each do |contact| %>
+        <h2> Contact Buddy</h2>
         <li><%= contact.first_name %> <%= contact.last_name %></li>
+        <li><%= contact.email %></li>
+        <li><%= contact.note %> </li>
         <% end %>
       </ul>
-  <!-- please complete me with links to other actions -->
+
   <li><a href="/contacts">Add a new contacts</a></li>
   <li><a href="/contacts">Modify an existing contact</a></li>
   <li><a href="/contacts">Delete a contact</a></li>

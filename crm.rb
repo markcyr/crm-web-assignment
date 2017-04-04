@@ -16,5 +16,11 @@ Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
   end
 
   get '/contacts' do
+    @crm_app_name = "Mark's CRM"
     erb :contacts
+  end
+
+  get '/contacts/new' do
+      @crm_app_name = "Mark's CRM"
+    erb :new_contact
   end
